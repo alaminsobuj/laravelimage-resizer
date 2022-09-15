@@ -1,0 +1,16 @@
+1.composer require intervention/image
+2.
+return [
+	......
+	$providers => [
+		......,
+		'Intervention\Image\ImageServiceProvider'
+	],
+	$aliases => [
+		......,
+		'Image' => 'Intervention\Image\Facades\Image'
+	]
+]
+
+3. use Image; this before controller class
+4.create directory images
